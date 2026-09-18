@@ -32,7 +32,7 @@ a, button{font-weight:bold;}
 .btn, a.btn, button.btn, .btn-outline{padding:var(--size-3) var(--size-5); -webkit-appearance:none; text-transform:capitalize; font-weight:bold; font-style:normal;
 display:flex; text-align:center; align-items:center; justify-content:center;}
 .rancak-popup{display:none;}
-.text-title{font-family:"Great Vibes",cursive; font-weight:400; text-wrap:balance; font-style:normal; text-transform:capitalize;}
+.text-title{font-family:"Great Vibes",cursive; font-weight:400; text-wrap:balance; font-style:normal;}
 .width-max{position:relative; width:100%; max-width:var(--site-container); margin:0 auto;}
 
 
@@ -64,10 +64,22 @@ textarea.form-field{min-height:144px;}
 
 
 .rancak-foundation{min-height:calc(100vh - var(--footer-height));}
-section{position:relative; z-index:1; padding:calc(var(--size-4) * 4) 0;}
+section{position:relative; z-index:1; padding:calc(var(--size-5) * 4) 0;}
 .section-bg{position:absolute; z-index:1; top:0; left:0; width:100%; height:100%;}
 .section-container{position:relative; z-index:10000; width:100%; max-width:var(--width-max); padding:0 var(--size-5);}
 .section-title{font-size:2rem; line-height:130%; text-transform:capitalize;}
+
+
+
+.section-tipeA .section-container{display:grid; grid-gap:var(--size-6);}
+.tipeA-header{display:grid; grid-gap:var(--size-1);}
+.tipeA-img{--aspect-ratio:1/1; display:flex; align-items:flex-start; justify-content:center;}
+.tipeA-img-frame{width:100%; max-width:480px;}
+.tipeA-content, .tipeA-info{line-height:170%; display:grid; grid-gap:var(--size-4); grid-auto-rows:min-content;}
+.tipeA-subtitle{font-size:0.875rem;}
+.tipeA-title{font-size:3rem; line-height:130%;}
+.tipeA-action{display:flex;}
+.tipeA-action .btn{margin-top:var(--size-1); margin-right:var(--size-1);}
 
 
 
@@ -82,6 +94,10 @@ section{position:relative; z-index:1; padding:calc(var(--size-4) * 4) 0;}
 .cover-title{text-transform:uppercase;}
 .cover-subtitle{text-wrap:balance;}
 .cover-action{margin-top:var(--size-5); display:flex; flex-wrap:wrap; justify-content:center;}
+
+
+
+.section-about .tipeA-info b{font-weight:bold;}
 
 
 
