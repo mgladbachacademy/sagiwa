@@ -1,11 +1,11 @@
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5X4YMMDZZ4"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2RVN6SM4Z"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-5X4YMMDZZ4');
+  gtag('config', 'G-Z2RVN6SM4Z');
 </script>
 <meta charset="utf-8">
 <meta name="robots" content="index, follow">	
@@ -87,7 +87,7 @@ $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousew
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Business",
+  "@type": "Health",
   "name": "Sagiwa",
   "url": "https://sagiwa.com/",
   "logo": "https://sagiwa.com/template/img/favicon.ico",
