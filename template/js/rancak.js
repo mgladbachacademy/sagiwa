@@ -36,6 +36,20 @@ function all_scroll(){
 
 
 
+function dynamic_scroll(){
+  $(document).on('click', '[aria-target]', function(e) {
+    e.preventDefault();
+    var target_id = $(this).attr('aria-target');
+    var target_anchor = document.querySelector('[aria-anchor="' + target_id + '"]');
+    
+    if (target_anchor) {
+      target_anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+}
+
+
+
 var parallaxSection = document.querySelector(".section-cover .section-bg");
 function updateParallax() {
   if (parallaxSection) {
@@ -60,4 +74,5 @@ $(document).ready(function(){
   "use strict";
   open_sticky();
   all_scroll();
+  dynamic_scroll();
 });

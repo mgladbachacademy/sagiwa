@@ -23,7 +23,7 @@
         <?php require ($_SERVER['SGW'].'template/img/logo.svg')?>
       </div>
       <div class="cover-action">
-        <button class="btn">Read More</button>
+        <button title="Read More" class="btn" aria-target="about">Read More</button>
       </div>
     </div>
   
@@ -34,7 +34,7 @@
   
   
   
-<section class="section-default section-tipeA section-tipeA2 section-about content-center">
+<section class="section-default section-tipeA section-tipeA2 section-about content-center" aria-anchor="about">
   <div class="section-container">
     <div class="tipeA-img">
       <picture class="tipeA-img-frame img-frame thumb-loading">

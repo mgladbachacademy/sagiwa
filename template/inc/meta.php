@@ -61,7 +61,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="canonical" href="https://gfifoundation.org/" />
-<link href="template/img/favicon.ico?<?php echo $anticache; ?>" rel="icon" type="image/ico" />
+<link href="template/img/favicon.ico" rel="icon" type="image/ico" />
 
 <link rel="preload" href="template/fonts/1Ptsg8zYS_SKggPNyCg4TYFq.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="template/fonts/1Ptug8zYS_SKggPNyC0ITw.woff2" as="font" type="font/woff2" crossorigin>
