@@ -29,7 +29,7 @@ html, body{background-color:var(--bg-1);}
 html{scroll-behavior:smooth; min-height:100vh;}
 body{overflow-x:hidden;}
 a, button{font-weight:bold;}
-.btn, a.btn, button.btn, .btn-outline{padding:var(--size-3) var(--size-5); -webkit-appearance:none; text-transform:capitalize; font-weight:bold; font-style:normal;
+.btn, a.btn, button.btn, .btn-outline{padding:var(--size-4) var(--size-5); -webkit-appearance:none; text-transform:capitalize; font-weight:bold; font-style:normal;
 display:flex; text-align:center; align-items:center; justify-content:center;}
 .rancak-popup{display:none;}
 .text-title{font-family:"Great Vibes",cursive; font-weight:400; text-wrap:balance; font-style:normal;}
