@@ -20,7 +20,9 @@
       <h1 class="section-title cover-title hide"><?php echo $sitename; ?></h1>
       <h2 class="cover-subtitle hide">by Sanustra</h2>
       <div class="cover-logo content-center">
-        <?php require ($_SERVER['SGW'].'template/img/logo.svg')?>
+        <picture class="cover-logo-frame img-frame thumb-loading">
+          <img alt="Logo Sagiwa" class="lazyload" data-original="template/img/logo.png"/>
+        </picture>
       </div>
       <div class="cover-action">
         <button title="Read More" class="btn" aria-target="about">Read More</button>
@@ -38,7 +40,7 @@
   <div class="section-container">
     <div class="tipeA-img">
       <picture class="tipeA-img-frame img-frame thumb-loading">
-        <img alt="Meet SAMUSA Consultant" class="lazyload" data-original="template/img/about.jpg"/>
+        <img alt="About Sagiwa" class="lazyload" data-original="template/img/about.jpg"/>
       </picture>
     </div>
     <div class="tipeA-content">

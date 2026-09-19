@@ -84,8 +84,9 @@ a.img-frame:hover{opacity:var(--hover-opacity);}
 
 .section-cover, .section-cover .section-title{color:var(--bg-2);}
 .section-cover .section-bg{background-repeat:no-repeat; background-size:cover; background-color:var(--color-2);}
-.section-cover .section-overlay{background-color:rgb(0 0 0 / 36%);}
+.section-cover .section-overlay{background-color:rgb(0 0 0 / 48%);}
 .section-cover .section-gradient{background-image:linear-gradient(to bottom, transparent, var(--color-2));}
+.cover-logo-frame{filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.36));}
 
 
 

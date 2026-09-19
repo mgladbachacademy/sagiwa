@@ -90,7 +90,8 @@ section{position:relative; z-index:1; padding:calc(var(--size-5) * 4) 0;}
 
 .cover-content{display:grid; line-height:140%;}
 .cover-content *{text-align:center;}
-.cover-logo svg{width:88%; max-width:400px; height:auto;}
+.cover-logo svg, .cover-logo-frame{width:88%; max-width:560px; height:auto;}
+.cover-logo-frame{--aspect-ratio:1001/640;}
 .cover-title{text-transform:uppercase;}
 .cover-subtitle{text-wrap:balance;}
 .cover-action{margin-top:var(--size-5); display:flex; flex-wrap:wrap; justify-content:center;}
