@@ -68,6 +68,11 @@
   
   
 <section class="section-default section-practitioner content-center">
+  <picture class="section-bg img-frame">
+    <source media="(min-width: 640px)" data-srcset="template/img/practitioner-bg-desktop.png">
+    <source media="(min-width: 414px)" data-srcset="template/img/practitioner-bg-mobile.png">
+    <img data-original="template/img/practitioner-bg-mobile-small.png" class="lazyload" alt="Cover Practitioner"/>
+  </picture>
   <div class="section-container">
     <h2 class="text-title section-title">Meet our practitioner</h2>
     <div class="practitioner-list">
@@ -78,35 +83,40 @@
           'practitioner_image'=>'hinro',
           'practitioner_name'=>'Hinro',
           'practitioner_title'=>'Access Bars Practitioner',
+          'practitioner_link'=>'https://www.instagram.com/p/DdXuwnXR7R-/',
         );
         $practitioner_array[]=array(
           'practitioner_id'=>'pitta',
           'practitioner_image'=>'pitta',
           'practitioner_name'=>'Pitta Sekar Wangi',
           'practitioner_title'=>'Professional Life and Career Coach | Zen Counselor | Access Bars Practitioner',
+          'practitioner_link'=>'https://www.instagram.com/p/DdXiSjjRElA/',
         );
         $practitioner_array[]=array(
           'practitioner_id'=>'iyus',
           'practitioner_image'=>'iyus',
           'practitioner_name'=>'Iyus Dharmawan',
           'practitioner_title'=>'Sound Healing & Sound Experience Facilitator',
+          'practitioner_link'=>'https://www.instagram.com/p/DdXo0z9RSSW/',
         );
         $practitioner_array[]=array(
           'practitioner_id'=>'astrid',
           'practitioner_image'=>'astrid',
           'practitioner_name'=>'Astrid Hendrawati',
           'practitioner_title'=>'Life Coach & Breathwork Facilitator',
+          'practitioner_link'=>'https://www.instagram.com/p/DdVElRsxNuz/',
         );
         $practitioner_array[]=array(
           'practitioner_id'=>'anggia',
           'practitioner_image'=>'anggia',
           'practitioner_name'=>'Anggia Hapsari',
           'practitioner_title'=>'Yin Yoga Teacher & Sound Bath Facilitator',
+          'practitioner_link'=>'https://www.instagram.com/p/DdVJsCjxSn3/',
         );
         foreach($practitioner_array as $practitioner_list){
       ?>
-        <button title="<?php echo($practitioner_list['practitioner_name'])?>" class="practitioner-box" 
-        aria-practitioner-button="<?php echo($practitioner_list['practitioner_id'])?>">
+        <a title="<?php echo($practitioner_list['practitioner_name'])?>" class="practitioner-box" 
+        href="<?php echo($practitioner_list['practitioner_link'])?>" target="_blank">
           <div class="practitioner-photo">
             <div class="practitioner-photo-frame img-frame thumb-loading">
               <img alt="Foto" class="lazyload" data-original="template/img/practitioner-<?php echo($practitioner_list['practitioner_image'])?>.jpg"/>
@@ -116,7 +126,7 @@
             <h2 class="practitioner-name"><?php echo($practitioner_list['practitioner_name'])?></h2>
             <h3 class="practitioner-title"><?php echo($practitioner_list['practitioner_title'])?></h3>
           </div>
-        </button>
+        </a>
       <?php } ?>
     </div>
   </div>
