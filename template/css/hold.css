@@ -98,6 +98,8 @@ a.img-frame:hover{opacity:var(--hover-opacity);}
 .section-separator-invert svg{transform:rotate(180deg);}
 
 .section-practitioner-separator{background-color:var(--color-5); fill:var(--color-2);}
+.section-calendar-separator{background-color:var(--color-5); fill:#F0F4F9;}
+.section-calendar-bottom-separator{background-color:var(--color-2); fill:#F0F4F9;}
 
 
 .section-practitioner{background-color:var(--color-5);}
@@ -107,6 +109,17 @@ a.img-frame:hover{opacity:var(--hover-opacity);}
 .practitioner-photo-frame{width:var(--thumb-size); height:var(--thumb-size); border-radius:var(--thumb-size);}
 .practitioner-name{font-size:1.15rem; margin-bottom:var(--size-1);}
 .practitioner-title{font-weight:normal; color:var(--color-1); font-size:0.875rem; text-wrap:balance;}
+
+
+
+.section-calendar{background-color:#F0F4F9;}
+.section-calendar .section-title{text-align:center; margin-bottom:var(--size-3); color:var(--color-2);}
+.calendar-box{--aspect-ratio:10/6;}
+@media screen and (min-width:0px) and (max-width:767px){
+  @media screen and (orientation:portrait){
+    .calendar-box{--aspect-ratio:1/1;}
+  }
+}
 
 
 

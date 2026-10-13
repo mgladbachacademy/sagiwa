@@ -136,7 +136,28 @@
   
   
   
-<section class="section-separator section-separator-invert section-practitioner-separator">
+<section class="section-separator section-separator-invert section-calendar-separator">
+  <?php require ($_SERVER['SGW'].'template/img/icon/separator.svg')?>
+</section>
+  
+  
+  
+  
+  
+<section class="section-default section-calendar content-center">
+  <div class="section-container">
+    <h2 class="text-title section-title">our schedule</h2>
+    <div class="calendar-box img-frame thumb-loading">
+        <iframe  class="lazyload" data-original="https://calendar.google.com/calendar/embed?src=fbcbac9fec16de9d1fbec78b4d0675a932416f474c4e9ef2b3576c6223c3e3a5%40group.calendar.google.com&ctz=Asia%2FJakarta" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</section>
+  
+  
+  
+  
+  
+<section class="section-separator section-calendar-bottom-separator">
   <?php require ($_SERVER['SGW'].'template/img/icon/separator.svg')?>
 </section>
   
