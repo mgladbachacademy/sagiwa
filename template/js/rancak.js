@@ -43,7 +43,28 @@ function dynamic_scroll(){
     var target_anchor = document.querySelector('[aria-anchor="' + target_id + '"]');
     
     if (target_anchor) {
-      target_anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Ganti scrollIntoView dengan fungsi scrollTo dari Lenis
+      if(window.lenis) {
+        window.lenis.scrollTo(target_anchor);
+      } else {
+        target_anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+}
+
+// ... [Kode parallax biarkan saja] ...
+
+var readMoreBtn = document.querySelector('.cover-action button');
+var targetSection = document.querySelector('.section-about');
+if (readMoreBtn && targetSection) {
+  readMoreBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    // Ganti scrollIntoView dengan fungsi scrollTo dari Lenis
+    if(window.lenis) {
+        window.lenis.scrollTo(targetSection);
+    } else {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
 }

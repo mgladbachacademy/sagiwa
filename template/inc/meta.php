@@ -69,6 +69,7 @@
 <link rel="preload" href="template/css/rancak.css?<?php echo $anticache; ?>" as="style">
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" as="script">
 <link rel="preload" href="template/js/lazysizes.min.js" as="script">
+<link rel="preload" href="template/js/lenis.js" as="script">
 
 <style><?php require ($_SERVER['SGW'].'template/css/font.css')?></style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -108,5 +109,21 @@ $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousew
   }
 }
 </script>
+
+<script src="template/js/lenis.js"></script>
+<script>
+  window.lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+  function updateLenis(time) {
+    if (window.lenis) {
+      window.lenis.raf(time);
+    }
+    requestAnimationFrame(updateLenis);
+  }
+  requestAnimationFrame(updateLenis);
+</script>
+
 </head>
 <body>

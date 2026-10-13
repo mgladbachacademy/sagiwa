@@ -26,7 +26,7 @@ body, html{font-family:"Raleway",sans-serif; font-size:var(--font-size); font-we
 font-feature-settings:'lnum' 1; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; -webkit-font-smoothing:antialiased; 
 -moz-osx-font-smoothing:grayscale; text-rendering:optimizeSpeed;}
 html, body{background-color:var(--bg-1);}
-html{scroll-behavior:smooth; min-height:100vh;}
+html{min-height:100vh;}
 body{overflow-x:hidden;}
 a, button{font-weight:bold;}
 .btn, a.btn, button.btn, .btn-outline{padding:var(--size-4) var(--size-5); -webkit-appearance:none; text-transform:capitalize; font-weight:bold; font-style:normal;
